@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Pyrofect Enterprise</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+<header>
+  <div class="container banner-logo">
+    <a href="admin.html"><img src="figures/Logo.png" alt="Pyrofect Enterprise Logo" class="logo-banner" /></a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="admin.html">Project</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>About Pyrofect Enterprise</h2>
+      <p>Your trusted partner for safe, reliable, and innovative electrical solutions.</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <h2>Who We Are</h2>
+      <p>
+        Pyrofect Enterprise is a leading provider of residential, commercial, and smart home electrical services.
+        With a commitment to safety, quality, and customer satisfaction, we bring over a decade of experience
+        in delivering tailored solutions for homes and businesses.
+      </p>
+
+      <h2>Our Mission</h2>
+      <p>
+        To power communities and businesses with cutting-edge electrical solutions that improve safety,
+        efficiency, and comfort.
+      </p>
+
+      <h2>Our Vision</h2>
+      <p>
+        To be the most trusted and innovative electrical services provider in the region, 
+        leading the way in smart home technology and sustainable energy practices.
+      </p>
+
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>Certified and experienced electricians</li>
+        <li>24/7 emergency services</li>
+        <li>Affordable, transparent pricing</li>
+        <li>Expertise in smart home integration</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Pyrofect Enterprise. All rights reserved.</p>
+    </div>
+  </footer>
+
+   <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-menu");
+      nav.classList.toggle("show");
+    }
+   </script>
+</body>
+</html>
+

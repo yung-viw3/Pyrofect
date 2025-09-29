@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Pyrofect Enterprise</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+ <header>
+  <div class="container banner-logo">
+    <a href="admin.html"><img src="figures/Logo.png" alt="Pyrofect Enterprise Logo" class="logo-banner" /></a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="admin.html">Project</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <section class="hero">
+    <div class="container">
+      <h2>Get in Touch with Us</h2>
+      <p>Have a question or need a quote? We’re here to help you with all your electrical needs.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div style="margin-top: 2rem; text-align: center;">
+        <h3>Our Details</h3>
+        <p><strong>Address:</strong> 55 David Webster</p>
+        <p><strong>Email:</strong> pyrofectenterprise@gmail.com</p>
+        <p><strong>Phone:</strong> +277-1871-3639/+2769-4667-780</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Pyrofect Enterprise. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-menu");
+      nav.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
+

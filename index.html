@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pyrofect Enterprise</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+  <header>
+  <div class="container banner-logo">
+    <img src="figures/Logo.png" alt="Pyrofect Enterprise Logo" class="logo-banner" />
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="admin.html">Project</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<body>
+  <section class="hero">
+    <div class="container">
+      <h2>Reliable Electrical Solutions</h2>
+      <p>Serving homes and businesses with professional electrical services.</p>
+      <a href="contact.html" class="btn">Get a Quote</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>Residential Wiring</h3>
+          <p>Complete home electrical installations and upgrades.</p>
+        </div>
+        <div class="service-item">
+          <h3>Commercial Maintenance</h3>
+          <p>Routine checks and emergency repairs for businesses.</p>
+        </div>
+        <div class="service-item">
+          <h3>Panel Upgrades</h3>
+          <p>Modernizing old panels for safety and performance.</p>
+        </div>
+		<div class="service-item">
+          <h3>Smart Homes</h3>
+		  <p>Enhance your lifestyle with smart, connected systems for improved safety, convenience, and energy efficiency. Services include:</p>
+          <li>Automated lighting (indoor/outdoor) via phone or voice contro</li>
+		  <li>Smart security: cameras, doorbells, sensors, and remote monitoring</li>
+		  <li>Intelligent climate control to optimize comfort and energy use</li>
+		  <li>Integration with Alexa, Google Assistant, or Apple HomeKit</li>
+		  <li>Cost tracking through smart meters and energy dashboards</li>		
+		</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy;Pyrofect Enterprise. All rights reserved.</p>
+    </div>
+  </footer>
+   <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-menu");
+      nav.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
+
+
