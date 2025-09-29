@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services - Pyrofect Enterprise</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <header>
+    <div class="container banner-logo">
+      <a href="admin.html"><img src="figures/Logo.png" alt="Pyrofect Enterprise Logo" class="logo-banner" /></a>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="admin.html">Project</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Our Electrical Services</h2>
+      <p>Providing top-quality electrical solutions for homes, businesses, and smart systems.</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <div class="service-list">
+        
+        <div class="service-item">
+          <h3>Residential Wiring</h3>
+          <p>Complete home electrical installations, rewiring, and safety upgrades for a secure and efficient living space.</p>
+        </div>
+
+        <div class="service-item">
+          <h3>Commercial Maintenance</h3>
+          <p>Routine checks, troubleshooting, and emergency repairs to keep your business running smoothly.</p>
+        </div>
+
+        <div class="service-item">
+          <h3>Panel Upgrades</h3>
+          <p>Modernizing outdated panels to handle today’s power demands while ensuring safety and reliability.</p>
+        </div>
+
+        <div class="service-item">
+          <h3>Smart Home Installations</h3>
+          <ul>
+            <li>Automated lighting (indoor & outdoor)</li>
+            <li>Smart security cameras & sensors</li>
+            <li>Climate control integration</li>
+            <li>Alexa, Google, and Apple HomeKit support</li>
+            <li>Energy usage tracking</li>
+          </ul>
+        </div>
+
+        <div class="service-item">
+          <h3>Emergency Electrical Services</h3>
+          <p>Available 24/7 for urgent issues like power outages, faults, or safety hazards.</p>
+        </div>
+
+        <div class="service-item">
+          <h3>Energy Efficiency Solutions</h3>
+          <p>Helping you save on electricity bills with LED lighting, smart meters, and optimized electrical setups.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Pyrofect Enterprise. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-menu");
+      nav.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
