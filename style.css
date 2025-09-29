@@ -1,13 +1,21 @@
+/* ============================= */
+/*        RESET STYLES           */
+/* ============================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background: url("figures/background.jpeg");
+  background: url("figures/background.jpeg") no-repeat center center fixed;
+  background-size: cover;
   color: white;
 }
 
@@ -17,6 +25,9 @@ body {
   margin: auto;
 }
 
+/* ============================= */
+/*            HEADER             */
+/* ============================= */
 header {
   background-color: navy;
   color: white;
@@ -50,9 +61,9 @@ nav {
 
 nav ul {
   list-style: none;
-  padding-left: 0;
   display: flex;
   gap: 20px;
+  padding-left: 0;
 }
 
 nav ul li a {
@@ -60,50 +71,22 @@ nav ul li a {
   text-decoration: none;
   padding: 8px 12px;
   display: block;
+  border-radius: 4px;
+  transition: background 0.3s;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
 }
 
-.menu-toggle {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  nav {
-    max-height: 0;
-    overflow: hidden;
-    background-color: #007AFF;
-    width: 100%;
-  }
-
-  nav.show {
-    max-height: 300px; 
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  nav ul li a {
-    padding: 12px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-}
-
-
+/* ============================= */
+/*            HERO               */
+/* ============================= */
 .hero {
   background: blue;
   color: white;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
@@ -122,16 +105,17 @@ nav ul li a.active {
   background: navy;
 }
 
-
+/* ============================= */
+/*          SERVICES             */
+/* ============================= */
 .services, .contact {
-  padding: 3rem 0;
+  padding: 3rem 1rem;
 }
 
 .services h2, .contact h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
-
 
 .service-list {
   display: flex;
@@ -143,12 +127,21 @@ nav ul li a.active {
 .service-item {
   flex: 1 1 30%;
   background: #007AFF;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
 
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
+/* ============================= */
+/*           CONTACT FORM         */
+/* ============================= */
 form {
   max-width: 600px;
   margin: auto;
@@ -161,6 +154,13 @@ form input, form textarea {
   padding: 0.8rem;
   border: 1px solid silver;
   border-radius: 5px;
+  background: white;
+  color: black;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
 }
 
 form button {
@@ -170,18 +170,30 @@ form button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
 form button:hover {
   background: dimgray;
 }
 
-
+/* ============================= */
+/*            FOOTER             */
+/* ============================= */
 footer {
   background: navy;
   color: white;
   text-align: center;
   padding: 1rem 0;
+}
+
+/* ============================= */
+/*       RESPONSIVE STYLES       */
+/* ============================= */
+@media (max-width: 1024px) {
+  .service-item {
+    flex: 1 1 45%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -190,30 +202,39 @@ footer {
   }
 
   nav {
+    max-height: 0;
+    overflow: hidden;
     width: 100%;
-    background-color: blue;
-    padding: 1rem;
+    background-color: #007AFF;
+    transition: max-height 0.3s ease;
+  }
+
+  nav.show {
+    max-height: 500px;
   }
 
   nav ul {
-    display: flex;
     flex-direction: column;
-    gap: 10px;
-  }
-
-  nav ul li {
-    margin: 0;
+    gap: 0;
   }
 
   nav ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
+    padding: 12px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  nav ul li a:hover {
-    background-color: #007AFF;
+  .service-item {
+    flex: 1 1 100%;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .services, .contact {
+    padding: 2rem 1rem;
   }
 }
+
+
 
