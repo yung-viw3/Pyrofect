@@ -1,91 +1,611 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Services - Pyrofect Enterprise</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Electrical Services | Pyrofect Enterprise</title>
+
+  <meta
+    name="description"
+    content="Explore Pyrofect Enterprise electrical services including residential wiring, commercial maintenance, smart home systems, electrical upgrades, emergency services and energy efficiency solutions."
+  >
+
+  <meta
+    name="keywords"
+    content="electrical services, residential wiring, commercial electrical maintenance, smart home installation, panel upgrades, emergency electrical services, energy efficiency"
+  >
+
+  <meta name="author" content="Pyrofect Enterprise">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <div class="container banner-logo">
-      <a href="index.html"><img src="figures/Logo.png" alt="Pyrofect Enterprise Logo" class="logo-banner" /></a>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      <nav id="nav-menu">
+
+  <!-- ============================= -->
+  <!--           HEADER              -->
+  <!-- ============================= -->
+
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+      <a
+        href="index.html"
+        class="logo-link"
+        aria-label="Pyrofect Enterprise Home"
+      >
+        <img
+          src="figures/Logo.png"
+          alt="Pyrofect Enterprise"
+          class="logo"
+        >
+      </a>
+
+      <button
+        class="menu-toggle"
+        onclick="toggleMenu()"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav class="site-nav" id="nav-menu">
+
         <ul>
-          <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="index.html">Project</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="services.html" class="active">Services</a>
+          </li>
+
+          <li>
+            <a href="about-us.html">About Us</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
         </ul>
+
+        <a href="contact.html" class="nav-cta">
+          Get a Quote
+        </a>
+
       </nav>
+
     </div>
+
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Our Electrical Services</h2>
-      <p>Providing top-quality electrical solutions for homes, businesses, and smart systems.</p>
-    </div>
-  </section>
 
-  <section class="services">
-    <div class="container">
-      <div class="service-list">
-        
-        <div class="service-item">
-          <h3>Residential Wiring</h3>
-          <p>Complete home electrical installations, rewiring, and safety upgrades for a secure and efficient living space.</p>
+  <!-- ============================= -->
+  <!--             HERO              -->
+  <!-- ============================= -->
+
+  <main>
+
+    <section class="page-hero">
+
+      <div class="page-hero-overlay"></div>
+
+      <div class="container page-hero-content">
+
+        <span class="hero-label">
+          OUR SERVICES
+        </span>
+
+        <h1>
+          Electrical Solutions<br>
+          <span>That Work For You.</span>
+        </h1>
+
+        <p>
+          From residential installations to commercial maintenance
+          and smart home technology, we provide practical electrical
+          solutions designed around your needs.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!--          SERVICES             -->
+    <!-- ============================= -->
+
+    <section class="services-page">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-label">
+            WHAT WE OFFER
+          </span>
+
+          <h2>
+            Our Electrical Services
+          </h2>
+
+          <p>
+            Professional solutions for homes, businesses and
+            modern connected spaces.
+          </p>
+
         </div>
 
-        <div class="service-item">
-          <h3>Commercial Maintenance</h3>
-          <p>Routine checks, troubleshooting, and emergency repairs to keep your business running smoothly.</p>
-        </div>
 
-        <div class="service-item">
-          <h3>Panel Upgrades</h3>
-          <p>Modernizing outdated panels to handle today’s power demands while ensuring safety and reliability.</p>
-        </div>
+        <div class="service-grid service-grid-large">
 
-        <div class="service-item">
-          <h3>Smart Home Installations</h3>
-          <ul>
-            <li>Automated lighting (indoor & outdoor)</li>
-            <li>Smart security cameras & sensors</li>
-            <li>Climate control integration</li>
-            <li>Alexa, Google, and Apple HomeKit support</li>
-            <li>Energy usage tracking</li>
-          </ul>
-        </div>
 
-        <div class="service-item">
-          <h3>Emergency Electrical Services</h3>
-          <p>Available 24/7 for urgent issues like power outages, faults, or safety hazards.</p>
-        </div>
+          <!-- Residential -->
 
-        <div class="service-item">
-          <h3>Energy Efficiency Solutions</h3>
-          <p>Helping you save on electricity bills with LED lighting, smart meters, and optimized electrical setups.</p>
+          <article class="service-card service-card-large">
+
+            <div class="service-number">
+              01
+            </div>
+
+            <div class="service-card-content">
+
+              <h3>
+                Residential Wiring
+              </h3>
+
+              <p>
+                Complete electrical solutions for homes, from new
+                installations and rewiring to upgrades and electrical
+                improvements.
+              </p>
+
+              <ul class="service-features">
+
+                <li>New electrical installations</li>
+                <li>House rewiring</li>
+                <li>Lighting installations</li>
+                <li>Electrical upgrades</li>
+                <li>Fault finding and repairs</li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <!-- Commercial -->
+
+          <article class="service-card service-card-large">
+
+            <div class="service-number">
+              02
+            </div>
+
+            <div class="service-card-content">
+
+              <h3>
+                Commercial Electrical
+              </h3>
+
+              <p>
+                Reliable electrical services designed to help
+                businesses maintain safe, efficient and dependable
+                electrical systems.
+              </p>
+
+              <ul class="service-features">
+
+                <li>Commercial installations</li>
+                <li>Electrical maintenance</li>
+                <li>Troubleshooting</li>
+                <li>Lighting systems</li>
+                <li>Electrical repairs</li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <!-- Panel Upgrades -->
+
+          <article class="service-card service-card-large">
+
+            <div class="service-number">
+              03
+            </div>
+
+            <div class="service-card-content">
+
+              <h3>
+                Electrical Upgrades
+              </h3>
+
+              <p>
+                Upgrade outdated electrical systems to better
+                support modern appliances, equipment and increased
+                power demands.
+              </p>
+
+              <ul class="service-features">
+
+                <li>Electrical panel upgrades</li>
+                <li>Distribution board improvements</li>
+                <li>Additional circuits</li>
+                <li>Safety improvements</li>
+                <li>Electrical assessments</li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <!-- Smart Homes -->
+
+          <article class="service-card service-card-large">
+
+            <div class="service-number">
+              04
+            </div>
+
+            <div class="service-card-content">
+
+              <h3>
+                Smart Home Systems
+              </h3>
+
+              <p>
+                Bring modern technology into your home with
+                connected systems designed for convenience,
+                security and energy awareness.
+              </p>
+
+              <ul class="service-features">
+
+                <li>Automated indoor & outdoor lighting</li>
+                <li>Smart security cameras and sensors</li>
+                <li>Smart climate control</li>
+                <li>Voice assistant integration</li>
+                <li>Energy monitoring systems</li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <!-- Emergency -->
+
+          <article class="service-card service-card-large">
+
+            <div class="service-number">
+              05
+            </div>
+
+            <div class="service-card-content">
+
+              <h3>
+                Emergency Electrical Services
+              </h3>
+
+              <p>
+                Assistance with urgent electrical problems that
+                require attention to restore safety and functionality.
+              </p>
+
+              <ul class="service-features">
+
+                <li>Electrical faults</li>
+                <li>Power-related issues</li>
+                <li>Electrical troubleshooting</li>
+                <li>Safety hazards</li>
+                <li>Urgent repairs</li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <!-- Energy Efficiency -->
+
+          <article class="service-card service-card-large">
+
+            <div class="service-number">
+              06
+            </div>
+
+            <div class="service-card-content">
+
+              <h3>
+                Energy Efficiency
+              </h3>
+
+              <p>
+                Improve the efficiency of your electrical systems
+                with smarter technologies and energy-conscious
+                solutions.
+              </p>
+
+              <ul class="service-features">
+
+                <li>LED lighting solutions</li>
+                <li>Smart energy monitoring</li>
+                <li>Energy usage tracking</li>
+                <li>Efficient electrical setups</li>
+                <li>Energy-saving recommendations</li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
         </div>
 
       </div>
-    </div>
-  </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; Pyrofect Enterprise. All rights reserved.</p>
+    </section>
+
+
+    <!-- ============================= -->
+    <!--       HOW WE WORK             -->
+    <!-- ============================= -->
+
+    <section class="process-section">
+
+      <div class="container">
+
+        <div class="section-heading process-heading">
+
+          <span class="section-label">
+            OUR PROCESS
+          </span>
+
+          <h2>
+            Simple. Professional. Reliable.
+          </h2>
+
+          <p>
+            We keep the process straightforward from the first
+            conversation to the completed project.
+          </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+          <div class="process-step">
+
+            <span>
+              01
+            </span>
+
+            <h3>
+              Understand
+            </h3>
+
+            <p>
+              We listen to your requirements and understand the
+              electrical challenge or project.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <span>
+              02
+            </span>
+
+            <h3>
+              Plan
+            </h3>
+
+            <p>
+              We identify the appropriate solution and plan the
+              work around your needs.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <span>
+              03
+            </span>
+
+            <h3>
+              Deliver
+            </h3>
+
+            <p>
+              We complete the work with a focus on quality,
+              safety and reliability.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <span>
+              04
+            </span>
+
+            <h3>
+              Support
+            </h3>
+
+            <p>
+              We remain available to help with future maintenance,
+              upgrades and electrical needs.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!--              CTA              -->
+    <!-- ============================= -->
+
+    <section class="cta-section">
+
+      <div class="container cta-content">
+
+        <span class="section-label">
+          HAVE A PROJECT?
+        </span>
+
+        <h2>
+          Let's Talk About Your Electrical Needs.
+        </h2>
+
+        <p>
+          Tell us what you need and we'll help you find the right
+          electrical solution.
+        </p>
+
+        <a href="contact.html" class="btn btn-primary">
+          Request a Quote
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ============================= -->
+  <!--            FOOTER             -->
+  <!-- ============================= -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+
+        <img
+          src="figures/Logo.png"
+          alt="Pyrofect Enterprise"
+          class="footer-logo"
+        >
+
+        <p>
+          Professional electrical solutions for homes,
+          businesses and modern smart spaces.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h3>
+          Services
+        </h3>
+
+        <a href="services.html">Residential Electrical</a>
+        <a href="services.html">Commercial Electrical</a>
+        <a href="services.html">Smart Home Systems</a>
+        <a href="services.html">Energy Efficiency</a>
+
+      </div>
+
+
+      <div class="footer-contact">
+
+        <h3>
+          Get In Touch
+        </h3>
+
+        <p>
+          Ready to discuss your electrical needs?
+        </p>
+
+        <a href="contact.html" class="footer-cta">
+          Contact Pyrofect →
+        </a>
+
+      </div>
+
     </div>
+
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <p>
+          © 2026 Pyrofect Enterprise. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
   </footer>
 
+
+  <!-- ============================= -->
+  <!--          MOBILE MENU          -->
+  <!-- ============================= -->
+
   <script>
+
     function toggleMenu() {
+
       const nav = document.getElementById("nav-menu");
+      const button = document.querySelector(".menu-toggle");
+
       nav.classList.toggle("show");
+
+      const isOpen = nav.classList.contains("show");
+
+      button.setAttribute("aria-expanded", isOpen);
+
     }
+
   </script>
+
 </body>
 </html>
-
+```
